@@ -26,6 +26,27 @@ branche indifféremment sur Claude Code, Cursor, et tout client compatible. Priv
 
 ---
 
+### MemPalace — système de mémoire (serveur MCP, 44 outils)
+- **Lien** : `github.com/MemPalace/mempalace` · image `ghcr.io/mempalace/mempalace`
+- **Type** : MCP (mémoire) + CLI + API Python + hooks d'auto-save
+- **Compatibilité** : **agnostique** — Claude Code, Codex CLI, Gemini CLI, Cursor, clients MCP
+- **Installation** : `uv tool install mempalace` (ou `pipx install mempalace`, ou Docker) ;
+  puis `mempalace init ~/projects/monapp`. Requiert Python 3.9+, ~300 Mo (embeddings).
+- **À quoi ça sert** : mémoire locale « verbatim » (sans résumé) + recherche sémantique.
+  Structure en *wings* (personnes/projets) → *rooms* (sujets) → *drawers* (contenu brut),
+  graphe de connaissances temporel, coordination d'agents, diaries.
+- **Objets réutilisables** :
+  - **Serveur MCP** — 44 outils (lecture/écriture palace, requêtes de graphe, navigation cross-wing, diaries).
+  - **Hooks d'auto-save** — rétention périodique (Claude Code, Codex, Cursor) → voir [hooks.md](hooks.md).
+  - **Backends enfichables** — ChromaDB (défaut), SQLite, Milvus, Qdrant, PostgreSQL/pgvector
+    (interface `mempalace/backends/base.py`).
+  - **CLI + API Python**, abstraction d'embeddings (local ou API compatible OpenAI),
+    commandes *mine* (extraction depuis fichiers de projet et transcripts).
+- **Notes** : mémoire **locale, zéro appel API** (96,6 % R@5 sur LongMemEval). Déjà intégré à
+  mon workflow GSD via les skills/agents `gsd-mempalace-*` (capture/recall/curator).
+
+---
+
 <!-- Gabarit :
 ### Nom
 - **Lien / package** :

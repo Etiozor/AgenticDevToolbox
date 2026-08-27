@@ -28,6 +28,15 @@ PostToolUse, Stop, PreCompact…). Câblés dans `settings.json`.
 
 ---
 
+### Hooks d'auto-save MemPalace
+- **Source** : [MemPalace](mcp-servers.md) (`github.com/MemPalace/mempalace`)
+- **Type** : hooks de rétention périodique
+- **Compatibilité** : agnostique — Claude Code, Codex CLI, Cursor
+- **Installation** : fournis avec MemPalace (`uv tool install mempalace`)
+- **À quoi ça sert** : sauvegardent périodiquement la conversation dans le palace mémoire.
+
+---
+
 <!-- Gabarit (pour un hook fait main, à mettre au coffre) :
 ### Nom
 - **Événement** : SessionStart | PreToolUse | PostToolUse | …
