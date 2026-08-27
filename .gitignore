@@ -1,0 +1,21 @@
+# Secrets — ne JAMAIS committer
+.env
+.env.*
+*.secret
+*.secrets
+.secrets
+.credentials.json
+*credentials*.json
+*token*.json
+*.pem
+*.key
+
+# OS / éditeurs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Divers
+node_modules/
+*.log

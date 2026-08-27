@@ -1,0 +1,26 @@
+# Requirements pour xlsx_to_markdown.py
+# Script de conversion de fichiers Microsoft Excel (.xlsx) vers Markdown (.md)
+# Version: 1.7.1 - Maat
+# Auteur: Philippe Chayer
+
+# Dépendances externes
+openpyxl>=3.1.0
+Pillow>=10.0.0
+
+# Note: Les modules suivants sont inclus dans la bibliothèque standard Python
+# et ne nécessitent pas d'installation:
+# - os, sys, re, pathlib, hashlib, datetime, zipfile, shutil, urllib.parse, typing
+
+# ==============================================================================
+# INSTRUCTIONS D'INSTALLATION
+# ==============================================================================
+#
+# Installation dans l'environnement Python global:
+#   pip install -r xlsx_to_markdown_requirements.txt
+#
+# OU installation dans un environnement virtuel (RECOMMANDÉ):
+#   python -m venv .venv
+#   .\.venv\Scripts\Activate.ps1
+#   pip install -r xlsx_to_markdown_requirements.txt
+#
+# ==============================================================================

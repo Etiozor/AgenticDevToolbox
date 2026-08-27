@@ -1,0 +1,21 @@
+{
+  "_comment": "Préférences Claude Code PORTABLES, extraites de ~/.claude/settings.json. Les hooks/statusline GSD (chemins absolus Windows) sont volontairement exclus : ils sont régénérés par `npx gsd-core`. Voir docs/bootstrap.md.",
+  "model": "opus",
+  "effortLevel": "high",
+  "tui": "fullscreen",
+  "theme": "dark",
+  "permissions": {
+    "allow": [
+      "Bash(npx gsd-core *)",
+      "Read(.planning/*)",
+      "Write(.planning/*)",
+      "Read(STATE.md)",
+      "Write(STATE.md)"
+    ],
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(.secrets)"
+    ]
+  }
+}

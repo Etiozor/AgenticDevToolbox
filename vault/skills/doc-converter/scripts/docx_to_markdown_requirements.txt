@@ -1,0 +1,26 @@
+# Requirements pour docx_to_markdown.py
+# Script de conversion de fichiers Microsoft Word (.docx) vers Markdown (.md)
+# Version: 1.6.1 - Ra
+# Auteur: Philippe Chayer
+
+# Dépendances externes
+python-docx>=1.1.0
+Pillow>=10.0.0
+
+# Note: Les modules suivants sont inclus dans la bibliothèque standard Python
+# et ne nécessitent pas d'installation:
+# - os, sys, re, pathlib, hashlib, datetime, zipfile, shutil, urllib.parse, typing
+
+# ==============================================================================
+# INSTRUCTIONS D'INSTALLATION
+# ==============================================================================
+#
+# Installation dans l'environnement Python global:
+#   pip install -r docx_to_markdown_requirements.txt
+#
+# OU installation dans un environnement virtuel (RECOMMANDÉ):
+#   python -m venv .venv
+#   .\.venv\Scripts\Activate.ps1
+#   pip install -r docx_to_markdown_requirements.txt
+#
+# ==============================================================================
