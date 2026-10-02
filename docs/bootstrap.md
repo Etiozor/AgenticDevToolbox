@@ -25,6 +25,12 @@ cp vault/instructions/CLAUDE.md ~/.claude/CLAUDE.md   # Claude Code
 
 (Adapte pour `AGENTS.md` / `.cursorrules` selon le CLI.)
 
+Pour n'ajouter qu'un bloc précis (sans écraser le fichier existant) :
+
+```bash
+scripts/add-instructions.sh rigueur-intellectuelle [fichier-cible]
+```
+
 ## 4. Réinstaller les frameworks (catalogue)
 
 Depuis [catalog/frameworks.md](../catalog/frameworks.md) et
